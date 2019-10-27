@@ -11,6 +11,9 @@
 			if (repo.homepage.indexOf("https://huguesguilleus.github.io/") != 0) {
 				continue ;
 			}
+			if (repo.name == "huguesguilleus.github.io") {
+				continue ;
+			}
 			ls.insertAdjacentHTML("beforeend", `<li>
 				<hgroup>${repo.name}</hgroup>
 				<a href="${repo.homepage}">${repo.homepage}</a>
