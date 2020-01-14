@@ -1,4 +1,4 @@
-(()=>{
+document.addEventListener("DOMContentLoaded", ()=>{
 	var u = document.URL.replace(/.*:\/\/.*?\/(.*)\??.*/, "$1").split("/");
 	var last = u.pop();
 	var all = '<a href="/">/</a>' ;
@@ -10,5 +10,5 @@
 	if (last) {
 		all += `<a href="${root}/${last}">${last}</a>`
 	}
-	document.getElementById("404").innerHTML = all ;
-})();
+	document.getElementById("path404").innerHTML = all ;
+}, {once: true,});

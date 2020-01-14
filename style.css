@@ -1,0 +1,16 @@
+@import "/assets/style.css";
+
+#lsRepo { padding: 0px; }
+#lsRepo::before { content: ""; }
+#lsRepo p { margin-top: 0px; }
+hgroup { font-weight: bold; }
+.mark{height: 1rem;}
+li {
+	list-style: "";
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#path404{
+	font-size: xx-large;
+}
