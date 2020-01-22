@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	(await getRepos()).filter(repo => !repo.archived && repo.description)
 		.filter(repo => repo.name != "huguesguilleus.github.io")
 		.sort((r1, r2) => r1.name < r2.name)
-		.forEach(repo => ls.insertAdjacentHTML("beforeend", `<li class="one-half column">
+		.forEach(repo => ls.insertAdjacentHTML("beforeend", `<li>
 			<hgroup>
 				<a href="${repo.html_url}" title="GitHub" ><img class="mark" src="/GitHub-Mark.png"></a>
 				${repo.name}
